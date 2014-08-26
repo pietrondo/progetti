@@ -1,17 +1,23 @@
 package me.pietrocapriata.pietrofatti;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class IGrandiLuoghiComuni extends ActionBarActivity {
+
+public class IGrandiLuoghiComuni extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_igrandi_luoghi_comuni);
+        TextView testodamettere = (TextView) findViewById(R.id.testo1);
+        String testoda="testo";
+           testodamettere.setText(testoda);
+
     }
 
 
