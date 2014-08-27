@@ -14,9 +14,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/testo1"
         android:textStyle="bold"
-        android:layout_marginBottom="168dp"
         android:textSize="33dp"
-        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/bottoneprincipale"
+        android:layout_below="@+id/testo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:layout_alignParentEnd="false" />
 
 </RelativeLayout>

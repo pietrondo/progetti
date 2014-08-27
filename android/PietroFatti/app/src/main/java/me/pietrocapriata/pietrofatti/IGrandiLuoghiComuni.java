@@ -1,11 +1,13 @@
 package me.pietrocapriata.pietrofatti;
 
 import android.app.Activity;
+import android.location.GpsStatus;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
-
+import android.view.View;
 
 
 public class IGrandiLuoghiComuni extends Activity {
@@ -17,6 +19,19 @@ public class IGrandiLuoghiComuni extends Activity {
         TextView testodamettere = (TextView) findViewById(R.id.testo1);
         String testoda="testo";
            testodamettere.setText(testoda);
+
+        Button bottone1 = (Button) findViewById(R.id.bottoneprincipale);
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        };
+
+        bottone1.setOnClickListener(listener);
+
+
+
 
     }
 
