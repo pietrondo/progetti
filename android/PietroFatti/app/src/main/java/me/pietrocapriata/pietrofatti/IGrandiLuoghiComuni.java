@@ -1,11 +1,14 @@
 package me.pietrocapriata.pietrofatti;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.location.GpsStatus;
 import android.os.Bundle;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.view.View;
 
@@ -24,7 +27,8 @@ public class IGrandiLuoghiComuni extends Activity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                RelativeLayout sfondo = (RelativeLayout) findViewById(R.id.layout2);
+                sfondo.setBackgroundColor(Color.RED);
             }
         };
 
